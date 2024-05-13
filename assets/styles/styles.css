@@ -1,0 +1,704 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #c6ccdc;
+}
+
+.navbar {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+a.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-links a:hover {
+    color: #42558d;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav div img {
+    width: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a:hover {
+    color: #c6ccdc;
+    border-bottom: 1px solid #c6ccdc;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px;
+}
+
+.main {
+    width: 95%; 
+    max-width: 1130px; 
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.about-text h1 {
+    color: black;
+    font-size: 50px; 
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: black;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+span {
+    color: #42558d;
+}
+
+
+
+.about-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.about{
+    width: 100%;
+    padding: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about section{
+    position: fixed;
+}
+
+.about img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px
+}
+
+.about-text {
+    flex: auto;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 50%;
+    max-width: 800px;
+}
+
+.about-text p {
+    text-align: justify;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px;
+    border-radius: 13px;
+    background-color: #42558d;
+    color: white;
+    font-size: 15px;
+    font-weight: 350;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    border: 5px solid white;
+    background: transparent;
+    color: black;
+}
+
+.telkom-1 {
+    display: none;
+}
+
+.telkom-2 img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.blog-telkom section {
+    position: fixed;
+}
+
+.blog-telkom {
+    width: 100%;
+    padding: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.telkomjkt-text {
+    flex: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 50%;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.telkomjkt-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.title h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.mctel img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.mctel-jkt section {
+    position: fixed;
+}
+
+.mctel-jkt {
+    width: 100%;
+    padding: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mctel-text {
+    flex: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 50%;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.mctel-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.gopay-ba section {
+    position: fixed;
+}
+
+.gopay-ba {
+    width: 100%;
+    padding: 50px 90px 50px 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gopay-text {
+    flex: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 50%;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.gopay-text h5 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.gopay img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.blog {
+    text-align: center;
+    padding: 0 0 10px 40px;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 45px;
+}
+
+
+.blog h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.blog p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.blog span {
+    font-size: 24px;
+}
+
+.blog h5 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 0.8rem;
+}
+
+.project {
+    text-align: center;
+    padding: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cards {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #42558d;
+    box-shadow: 0px 5px 9px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    padding: 10px 0px 0px 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+}
+
+.card-text {
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: white;
+}
+
+.container {
+    padding: 30px;
+    margin: 10rem;
+    display: auto;
+    grid-template-columns: repeat(8, 1fr);
+    margin: 5px 15px;
+    gap: 20px;
+    position: flex;
+}
+
+.contact {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+    color: #42558d;
+}
+
+.contactz-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactz-form input,
+.contactz-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contactz-forrm button {
+    padding: 10px 20px;
+    background-color: #42558d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+aside {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .animasizain img {
+        width: 45%;
+        align-items: center;
+        text-align: center;
+        min-width: 250px;
+  }
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.footerz {
+    background-color: #333; 
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .burger:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #777;
+        width: 100%;
+        text-align: left;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text {
+        width: auto;
+    }
+
+    .about img {
+        max-width: 300px;
+        align-self: center;
+        border-radius: 13px;
+    }
+
+    .about-text p {
+        text-align: justify;
+    }
+
+    .button {
+        margin: auto;
+        align-items: left;
+    }
+
+    .blog-telkom {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    .telkom-1 img {
+        max-width: 300px;
+        align-self: center;
+        border-radius: 13px;
+    }
+
+    .telkomjkt-text {
+        width: auto;
+        padding-top: 20px;
+    }
+
+    .blog-telkom img {
+        max-width: 300px;
+        align-self: center;
+        border-radius: 13px;
+    }
+
+    .telkomjkt-text h5 {
+        text-align: justify;
+    }
+
+    .telkomjkt-text p {
+        text-align: justify;
+    }
+
+    .telkom-2 img {
+        display: none;
+    }
+
+    .mctel-text {
+        width: auto;
+    }
+
+    .mctel img {
+        display: none;
+    }
+
+    .gopay-ba {
+        padding-top:0;
+    }
+
+    .gopay img {
+        display: none;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        margin-bottom: 15px;
+    }
+    
+    .contact-form button {
+        padding: 8px 16px;
+    }
+
+    .footer {
+        padding: 20px; 
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+
+    .about-text h1 {
+        font-size: 40px; 
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .footer {
+        padding: 10px; 
+    }
+
+    
+    .about {
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .about-text {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .about img {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+
+    .blog-telkom {
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .telkomjkt-text {
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    .mctel-jkt {
+        padding: 50px;
+        flex-direction: column;
+    }
+
+    .mctel-text {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .gopay-ba {
+        padding: 50px;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .gopay-text {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: justify;
+    }
+
+    .contact {
+        padding: 30px 0; 
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 8px;
+    }
+}
